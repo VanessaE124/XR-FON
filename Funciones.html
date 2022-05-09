@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Funciones-XR-FON</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main_1.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">XR-FON</a></li>
+							<li><a href="#one">Vuforia</a></li>
+							<li><a href="#two">Scripts</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>XR-FON</h1>
+							<p>Somos una librería de realidad extendida para dispositivos con 
+								sistema operativo Android. Permite el seguimiento de un objeto físico fijo (mesa),
+								de una dimensión variable de 20 cm^2 a 2 m^2, y dos objetos físicos rígidos que pueden
+								ser ubicados sobre la mesa; y que pueden ser manipulados en el entorno virtual por el usuario.</p>
+							<ul class="actions">
+								<li><a href="https://drive.google.com/file/d/1WbWmurvpcEvE6IyQYe5tg4ZBTDjGuVjN/view?usp=sharing"  target="_blank" class="button">Descargar</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="https://developer.vuforia.com/" target="_blank" class="image"><img src="images/Vuforia.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>VUFORIA</h2>
+									<p>Vuforia es una plataforma de desarrollo de aplicaciones
+									de Realidad Aumentada (AR) y Realidad Mixta (MR) multiplataforma </p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="https://library.vuforia.com/features/images/image-targets.html" target="_blank"  class="image"><img src="images/Image_target.jpg" style="width:60vh;height:30vh" alt="" data-position="center center" ;/></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Uso de targets</h2>
+									<p>Se utilizan imágenes que Vuforia detecta y rastrea para mostrar objetos físicos en el entorno virtual.</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="https://library.vuforia.com/articles/Solution/model-target-generator-user-guide.html" class="image"><img src="images/Model_target.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Model target generator</h2>
+									<p>Se implementa para capturar la mesa del entorno físico y ponerlo en el entorno virtual.</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper style1 fullscreen fade-up">
+					<div class="inner">
+						<h1>Script ButtonManager</h1>
+						<p>Se crean los UnityEvent, OnButtonPressed y OnButtonReleased, además del Gameobject, 
+							Habitación. Por consiguiente, se crea la función private void OnEnable que registra
+							cuando el botón es presionado y cuando no, a su vez, dentro de esta, se desactiva 
+							la habitación para que solo se muestre en caso de que se oprima el botón.
+							En la función ButtonPressed, se llama al evento OnButtonPressed, el cual activa 
+							la habitación debido al GameObject.SetActive; por último, se agrega un mensaje en caso
+							de que el botón sea presionado.
+							Por su parte, en la función ButtonReleased, se activa el UnityEvent OnButtonReleased,
+							qué sirve en caso de que el usuario desee agregar una sección o función al evento, además, 
+							se agrega un mensaje.  Para finalizar se crea la funciónOnDestroy, que sirve para quitar 
+							el registro de las funciones ButtonPressed y ButtonReleased en el caso de que se active la contraria.
+							</p>
+					</div>
+				</section>
+
+				<!-- Three -->
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
