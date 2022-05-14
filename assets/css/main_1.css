@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.centrado{
+		margin-right: auto;
+	  }
 body {
 	line-height: 1;
 }
