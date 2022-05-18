@@ -41,10 +41,12 @@ ol {
 	text-align: justify;
 	font-family: 'Saira Semi Condensed', sans-serif;
 }
+
 ul {
 	list-style: none;
 	font-family: 'Saira Semi Condensed', sans-serif;
 }
+
 li{
 	text-decoration: none;
 	color: inherit;
@@ -2531,7 +2533,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Saira Semi Condensed', sans-serif;
+			font-family: 'Font Awesome 5 Brands';
 		}
 
 		.icon.major {
