@@ -28,6 +28,7 @@
             <li><a href="#intro">XR-FON</a></li>
             <li><a href="#one">Button Manager</a></li>
             <li><a href="#two">Posición mesa</a></li>
+            <li><a href="#three">Modificación targets</a></li>
           </ul>
         </nav>
       </div>
@@ -38,7 +39,7 @@
       <!-- Intro -->
       <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
-          <h1>XR-FON</h1>
+          <h1>Bienvenido a la documentación de XR-FON</h1>
           <li>
             Somos una librería de realidad extendida para dispositivos con
             sistema operativo Android. Permite el seguimiento de un objeto
@@ -53,13 +54,10 @@
           <li>Visualización de un entorno virtual</li>
           <li>Interacción de objetos del mundo real en el entorno virtual</li>
           <br />
-          <h2>Prerrequisitos</h2>
-          <li> <a href="https://www.youtube.com/watch?v=n3TjCzfH8QY" target="_blank"> Instala Unity </a></li>
-          <li> Utiliza Unity Hub preferiblemente </li>
-          <li> <a href="https://www.youtube.com/watch?v=4GAN05OYlQw&t=948s" target="_blank"> Instala Vuforia en Unity </a></li>	
-          <li> <a href="https://unity3d.com/es/unity/qa/lts-releases" target="_blank"> Te recomendamos las versiones desde el 2020 en adelante </a></li>
-          <li>Su computador debe disponer de cámara para la compilación de la escena. </li>
-          <br />
+          <h2>Los prerrequisitos son fundamentales</h2>
+          <li> Aquí encontrarás tanto las funciones de nuestra librería como una introducción para modificar las mismas 
+            según tu necesidad. Lo haremos describiendo los scripts y las posibles acciones con targets y modelos 3D.
+          </li> <br>
           <ul class="actions">
             <li>
               <a
@@ -75,10 +73,10 @@
       <!-- One -->
       <section id="one" class="wrapper style2 spotlights">
         <section>
-			<a  class="image"><img src="images/virtual button script.JPG" alt="" data-position="center center" style="width:60vh;height:90vh"/></a>
+          <a  class="image"><img src="Targets/Boton.jpg" style="width:30vh;height:55vh" alt="" data-position="center center";/></a>
           <div class="content">
             <div class="inner">
-              <h2>Script ButtonManager</h2>
+              <h2>Botón virtual</h2>
               <p>
                 Se crean dos UnityEvent, OnButtonPressed y OnButtonReleased, los
                 cuales serán los eventos que almacenarán las acciones al momento
@@ -88,15 +86,32 @@
                 registra cuando el botón es presionado y cuando no, a su vez,
                 dentro de esta, se desactiva el GameObject para que solo se
                 muestre el entorno virtual en caso de que llegue a ser oprimido
-                el botón.
-              </p>
+                el botón.</p>
+              <ul class="actions">
+                <li><a href="Targets/Boton.jpg" download="Boton" class="button">Target botón</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <a  class="image"><img src="images/ButtonPressed.JPG" style="width:50vh;height:10vh" alt="" data-position="center center";/></a>
+          <div class="content">
+            <div class="inner">
+              <h2>ButtonPressed</h2>
               <p>
                 En la función ButtonPressed, se llama al evento OnButtonPressed,
                 que, mediante un GameObject.SetActive, activa la habitación; por
                 último, se agrega un Debug.Log para que se envíe un mensaje en
                 caso de que el botón sea presionado.
               </p>
-              <img src="/images/ButtonPressed.JPG" alt="" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <a  class="image"><img src="images/Button_released.JPG" style="width:50vh;height:10vh" alt="" data-position="center center";/></a>
+          <div class="content">
+            <div class="inner">
+              <h2> ButtonReleased</h2>
               <p>
                 Por su parte, en la función ButtonReleased, se activa el
                 UnityEvent OnButtonReleased, el cual tiene los mismos parámetros
@@ -106,7 +121,6 @@
                 las instancias del ButtonPressed en el caso de que se active el
                 ButtonReleased y viceversa.
               </p>
-              <img src="/images/Button_released.JPG" alt="" />
             </div>
           </div>
         </section>
@@ -115,25 +129,156 @@
       <!-- Two -->
       <section id="two" class="wrapper style2 spotlights">
         <section>
-          <a  class="image"><img src="images/Posocionplano script1.JPG" alt="" data-position="center center" style="width:60vh;height:90vh"/></a>
+          <a  class="image"><img src="images/Variables.JPG" style="width:50vh;height:40vh" alt="" data-position="center center";/></a>
               <div class="content">
                 <div class="inner">
-                  <h2>Script posición de la mesa </h2>
+                  <h2>1.) Script para la posición de la mesa</h2>
                   <p>
                     Este script se realiza para establecer una mesa de trabajo de tamaño variable que depende de dos targets.
                   </p>
-                  <ol>
+                  <ul>
                     <li>En la primera parte se hace la declaración de variables y vectores necesarios para el desarrollo</li>
                     <li>Establecer los dos targets, para esto debe ser declarado tanto en el script como en la ventana de ejecución de Unity </li>
+                  </ul>
+                  <a href="https://www.youtube.com/watch?v=AsOLhmiswB8" class="button"> Tutorial </a>
+
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Inicio.JPG" style="width:50vh;height:15vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2>2.) Inicialización </h2>
+                  <ul>
                     <li>Luego procedemos a realizar las clases para el cálculo de posiciones</li>
                     <li>Obtener posición: permite extraer la posición de los targets para posteriormente hacer el llamada a dos funciones</li>
+                  </ul>
+
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Calculos.JPG" style="width:50vh;height:50vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2>3.) Cálculos</h2>
+                  <ul>
                     <li>Calcula la posición: permite hacer las operaciones necesaria en X y Z por medio de la información entrada de uno de los targets</li>
                     <li>Calculo escala: la función toma las coordenadas de segundo targets para establecer el tamaño de la mesa</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/seteo.JPG" style="width:50vh;height:20vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2>4.) Posición y escala</h2>
+                  <ul>
                     <li>SeteoPosicion: la función permite establecer la mesa en las posiciones extraídas y calculadas anteriormente</li>    
                     <li>SeteoEscala: establece la escala de la mesa para dejarla finalmente en una posición correcta</li>
-                  </ol>
-                  <img src="/images/Posocionplano script2.JPG" alt="" />
+                  </ul>
+                </div>
+              </div>
+            </section>
+      </section>
 
+      <!-- Three -->
+      <section id="three" class="wrapper style2 spotlights">
+        <section>
+          <a  class="image"><img src="images/Vuforia.png" style="width:40vh;height:40vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> ¿Cómo modificar los targets?</h2>
+                  <p>
+                    Para crear nuevos targets es importante tener en cuenta que estos deben tener ciertas características que permitan al software hacer un tracking adecuado para un correcto y estable funcionamiento.
+                    Puede consultar cómo crear un target adecuado en la siguiente página: 
+                  </p>
+                  <ul class="actions">
+                    <a href="https://www.youtube.com/watch?v=AsOLhmiswB8" class="button"> Tutorial </a>
+                    <li><a href="https://library.vuforia.com/features/images/image-targets/best-practices-for-designing-and-developing-image-based-targets.html " class="button">Enlace</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Targets_paso_1.png" style="width:50vh;height:15vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 1.) Base de datos </h2>
+                  <p>Los targets se instalan en Unity como un package que contiene una base de datos de targets, 
+                    esta base de datos se crea desde Vuforia. Para cambiar estos targets que vienen por defecto en 
+                    la librería se debe cambiar la base de datos, por lo que se necesitarán realizar los siguientes pasos:</p>
+                    <ol>
+                      <li> Ingresar al sitio web TargetManager de Vuforia: <a href="https://developer.vuforia.com/target-manager"> Enlace</a></li>
+                      <li> Inicia sesión con el correo y la contraseña registrados al instalar y obtener la licencia en Vuforia.</li>
+                      <li> Ingresar a la pestaña Target Manager. </li>
+                    </ol>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Targets_paso_2.png" style="width:50vh;height:15vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 2.) Agregar base de datos </h2>
+                  <p> Dar clic en el botón Agregar Base de datos, ingresar el nombre y dar clic en crear </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Targets_paso_3.png" style="width:50vh;height:15vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 3.) Agregar targets a la base de datos </h2>
+                  <ol>
+                    <li>Dar clic en el botón Agregar target</li>
+                    <li>Completar las especificaciones del target para luego dar clic en Añadir.</li>
+                    <li>En caso de que sea un target diferente a un plano, seleccionar cada cara del target y añadirle la imagen deseada.</li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Targets_paso_4.png" style="width:50vh;height:15vh" alt="" data-position="center center";/></a>
+              <a  class="image"><img src="images/Targets_paso_4.1.png" style="width:40vh;height:30vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 4.) Descargar base de datos  </h2>
+                  <ol>
+                    <li>Una vez creados los targets necesarios, descargar la base de datos.</li>
+                    <li>Seleccionar la opción Unity Editor y descargar.</li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a class="image"><img src="images/Paso_4.1.1.png" style="width:40vh;height:40vh" alt="" data-position="center center" /></a>	
+              <a  class="image"><img src="images/Targets_paso_5.png" style="width:40vh;height:40vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 5.) Importar la base de datos en Unity </h2>
+                  <ol>
+                    <li>Importar el package en el proyecto en Unity.</li>
+                    <li> En import packager y dar en Importar</li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+            <section>
+              <a  class="image"><img src="images/Targets_paso_6.png" style="width:30vh;height:50vh" alt="" data-position="center center";/></a>
+              <a  class="image"><img src="images/Targets_paso_7.png" style="width:25vh;height:50vh" alt="" data-position="center center";/></a>
+              <div class="content">
+                <div class="inner">
+                  <h2> 6.) Ajustar el target y el modelo </h2>
+                  <ol>
+                    <li>Seleccionar el elemento del target y dirigirse al inspector.</li>
+                    <li>En Database seleccionar la base de datos correspondiente.</li>
+                    <li>En Image Target seleccionar el target correspondiente.</li>
+                    <li>Ajustar el modelo al target como desee.</li>
+                  </ol>
                 </div>
               </div>
             </section>

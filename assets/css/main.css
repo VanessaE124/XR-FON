@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
-
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@300&display=swap');
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -33,8 +35,20 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ol {
 	list-style: none;
+	text-align: justify;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+ul {
+	list-style: none;
+	font-family: 'Saira Semi Condensed', sans-serif;
+}
+li{
+	text-decoration: none;
+	color: inherit;
+	font-family: 'Saira Semi Condensed', sans-serif;
+
 }
 
 blockquote, q {
@@ -163,6 +177,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: dotted 1px;
 		color: inherit;
+		font-family: 'Saira Semi Condensed', sans-serif;
 	}
 
 		a:hover {
@@ -178,7 +193,9 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 3em;
+		margin: 1em;
+		text-align: justify;
+		font-family: 'Saira Semi Condensed', sans-serif;
 	}
 
 		p.content {
@@ -194,6 +211,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Saira Semi Condensed', sans-serif;
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -260,7 +278,6 @@ input, select, textarea {
 	code {
 		border-radius: 8px;
 		border: solid 1px;
-		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -268,7 +285,6 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2090,7 +2106,6 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
 			}
 
@@ -2235,7 +2250,6 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
 		}
 
@@ -2252,7 +2266,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Saira Semi Condensed', sans-serif;
 		}
 
 		.icon.major {
@@ -3333,7 +3347,6 @@ input, select, textarea {
 		}
 
 /* Main */
-
 	#main {
 		background-color: #ffffff7a;
 		color: #000;
@@ -3608,7 +3621,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
-				padding: 4em 4em 2em 4em ;
+				padding: 3em 3em 2em 3em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3621,7 +3634,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#main > .main {
-				padding: 4em 3em 2em 3em ;
+				padding: 3em 2em 2em 2em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3710,7 +3723,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 2em 1em 2em ;
 			}
 
 		}
