@@ -1,0 +1,96 @@
+\hypertarget{_posocion_plano_8cs_source}{}\doxysection{Posocion\+Plano.\+cs}
+\mbox{\hyperlink{_posocion_plano_8cs}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00005}\mbox{\hyperlink{class_posocion_plano}{00005}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_posocion_plano}{PosocionPlano}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00008}\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{00008}}     \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}; \textcolor{comment}{//Vector que se va a utilizar para almaceanr la posición del target "{}Origen"{}}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00009}\mbox{\hyperlink{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}{00009}}     \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}{obtenerPosAbIzq}};\textcolor{comment}{//Vector que se va a utilizar para almaceanr la posición del segundo target, con sus coordenadas se harán los cálculos necesarios}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00011}\mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{00011}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}}; \textcolor{comment}{//Posicion de la mesa en el eje Z}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00012}\mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{00012}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}}; \textcolor{comment}{//Posicion de la mesa en el eje X}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00013}\mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{00013}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}}; \textcolor{comment}{//Posicion de la mesa en el eje Y}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00014}\mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{00014}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}}; \textcolor{comment}{//Escala dela mesa en el eje Z}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00015}\mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{00015}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}}; \textcolor{comment}{//Escala dela mesa en el eje X}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00016}\mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{00016}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}}; \textcolor{comment}{//Escala dela mesa en el eje Y}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00018}00018     \textcolor{comment}{// Versi+on siguiente, esto no se está usando actualmente en el código}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00019}00019     Collider m\_Collider;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00020}\mbox{\hyperlink{class_posocion_plano_ad23fbec81d20da4a850ed1d54f0c9e09}{00020}}     \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_posocion_plano_ad23fbec81d20da4a850ed1d54f0c9e09}{boundPoint1}};}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00021}\mbox{\hyperlink{class_posocion_plano_a58aa5156d43bed289c4329a634a8ccd6}{00021}}     \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_posocion_plano_a58aa5156d43bed289c4329a634a8ccd6}{boundPoint2}};}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00022}\mbox{\hyperlink{class_posocion_plano_abe4c84bd52e1750f194f6b99061d1b63}{00022}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_abe4c84bd52e1750f194f6b99061d1b63}{posx}};}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00023}\mbox{\hyperlink{class_posocion_plano_a3426fc186da9873fcc0b9642740cfc63}{00023}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_posocion_plano_a3426fc186da9873fcc0b9642740cfc63}{posz}};}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00025}00025     \textcolor{comment}{//Debe asegurarse de llenar estos campos en la ventana inspector}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00026}00026     [SerializeField] \textcolor{keywordtype}{string} NombreAbIzq; \textcolor{comment}{//Nombre del primer target (ImageAbIzq), este se debe ubicar en la esquina inferior izquierda de la mesa}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00027}00027     [SerializeField] \textcolor{keywordtype}{string} NombreArDer; \textcolor{comment}{//Nombre del segundo Image Target (ImageArDer), este se debe ubicar en la esquina superior derecha de la mesa}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00029}00029     \textcolor{comment}{//Contenedores de información de los Image targets }}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00030}00030     GameObject ContenedorAbIzq; \textcolor{comment}{//En este GameObject se almacenan los datos del primer target (ImageAbIzq).}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00031}00031     GameObject ContenedorArDer; \textcolor{comment}{//En este GameObject se almacenan los datos del segundo target (ImageArDer).}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00033}00033     \textcolor{keywordtype}{void} Start()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00034}00034     \{   \textcolor{comment}{//Al iniciar la ejecución se buscan los Image targets a través del nombre digitado en la ventana de inspector para almacenar sus datos en un contenedor.}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00035}00035         \textcolor{comment}{//Esto nos permitirá relizar opceraciones más adelante}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00036}00036         ContenedorArDer = GameObject.Find(NombreArDer);}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00037}00037         ContenedorAbIzq = GameObject.Find(NombreAbIzq);}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00039}00039        \textcolor{comment}{//Obtener el colider puesto en el modelo 3d (ACTUALMENTE NO SÉ ESTÁ USANDO)}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00040}00040             \textcolor{comment}{/*m\_Collider = GetComponent<Collider>();}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00041}00041 \textcolor{comment}{            boundPoint1 = m\_Collider.bounds.min;}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00042}00042 \textcolor{comment}{            boundPoint2 = m\_Collider.bounds.max;}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00043}00043 \textcolor{comment}{            posx = boundPoint2.x*2;}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00044}00044 \textcolor{comment}{            posz=  boundPoint2.z*2;*/}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00048}00048     \textcolor{comment}{// Update se llama en cada frame}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00049}00049     \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00050}00050     \{}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00051}00051         \textcolor{comment}{//Llamado a la funcion  obtenerPosicion;}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00052}00052         \mbox{\hyperlink{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}{obtenerPosicion}}();}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00054}\mbox{\hyperlink{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}{00054}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}{obtenerPosicion}}()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00055}00055     \{    \textcolor{comment}{//Esta función permite obtener el vector con la posicion de ambos targets}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00056}00056             \mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}} = ContenedorArDer.transform.position;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00057}00057             \mbox{\hyperlink{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}{obtenerPosAbIzq}} = ContenedorAbIzq.transform.position;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00058}00058         \textcolor{comment}{//Llamado a las  funciones que realizan calculos de escala y posición del target}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00059}00059             \mbox{\hyperlink{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}{calculoEscala}}();}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00060}00060             \mbox{\hyperlink{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}{calculoPosicion}}();}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00061}00061         }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00063}\mbox{\hyperlink{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}{00063}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}{calculoPosicion}}()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00064}00064     \{   \textcolor{comment}{//Esta funcion toma las coordenadas X, Y y Z del segundo target para hacer el calculo de la posicion central de la mesa.}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00065}00065         \textcolor{comment}{//Para realizar estas operaciones de forma correcta se debe tener en cuenta que el pivote de la mesa debe estar en el centro de la misma.}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00066}00066             \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.z)/2;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00067}00067             \mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.x)/2;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00068}00068         \textcolor{comment}{//Para objeter la posición en el eje Y se debe tener en cuenta la escala del modelo en terminos de la posición en Unity: En el caso de un cubo es (1,1,1)}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00069}00069         \textcolor{comment}{//Se toma la posicion en el eje Y del segundo target y se le resta el tamaño dividido en 2, este valor se establece como negativo para transladar hacia abajo el objeto.}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00070}00070             \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.y-\/\mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}}/2); }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00071}00071                 \mbox{\hyperlink{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}{seteoPosicion}}();}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00073}\mbox{\hyperlink{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}{00073}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}{calculoEscala}}()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00074}00074     \{   \textcolor{comment}{//Esta funcion toma las coordenadas X, Y y Z del segundo target para establecer la escala de la mesa.}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00075}00075         \textcolor{comment}{//Para escalar la mesa de forma correcta su modelo debe tener una escala de (1,1,1) en terminos de coordenadas en Unity }}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00076}00076             \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.z); }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00077}00077             \mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.x);}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00078}00078             \mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}} = 0.5f;}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00079}00079             \mbox{\hyperlink{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}{seteoEscala}}();}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00080}00080     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00082}\mbox{\hyperlink{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}{00082}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}{seteoPosicion}}() }
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00083}00083     \{   \textcolor{comment}{//Este metodo establece la posición de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00084}00084             transform.position = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}}, \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}}, \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}});}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00085}00085     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00086}\mbox{\hyperlink{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}{00086}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}{seteoEscala}}()}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00087}00087     \{ \textcolor{comment}{//Este metodo establece la escala de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00088}00088         \textcolor{comment}{//Tener en cuenta que el metodo localScale escala de manera relativa al padre de un GameObject por lo que este no debe tener un padre}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00089}00089         transform.localScale = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}},0.5f, \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}});}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00090}00090     \}}
+\DoxyCodeLine{\Hypertarget{_posocion_plano_8cs_source_l00091}00091 \}}
+
+\end{DoxyCode}

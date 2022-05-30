@@ -1,0 +1,153 @@
+\hypertarget{class_button_manager}{}\doxysection{Referencia de la Clase Button\+Manager}
+\label{class_button_manager}\index{ButtonManager@{ButtonManager}}
+Diagrama de herencias de Button\+Manager\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_button_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_button_manager_ad7b0089b2bfa10f734b8364d6818b0b1}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_button_manager_a22ced41bbb3fd0d55361d57fc4774a34}{Button\+Pressed}} (Virtual\+Button\+Behaviour button)
+\item 
+void \mbox{\hyperlink{class_button_manager_a7e2b1849193376489228c8bad4335891}{Button\+Released}} (Virtual\+Button\+Behaviour button)
+\item 
+void \mbox{\hyperlink{class_button_manager_a27fc12bdbb62ef164a52ad50084411ae}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Unity\+Event \mbox{\hyperlink{class_button_manager_a508bba8c48903d8444a6d8a8bc1037c2}{On\+Button\+Pressed}}
+\item 
+Unity\+Event \mbox{\hyperlink{class_button_manager_a8e1dee73f8570b4ccbf62098302fa9f5}{On\+Button\+Released}}
+\item 
+Game\+Object \mbox{\hyperlink{class_button_manager_ab60a3a1e6de0a96bbff413c74ccfc560}{Habitacion}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00007}{7}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_button_manager_a22ced41bbb3fd0d55361d57fc4774a34}\label{class_button_manager_a22ced41bbb3fd0d55361d57fc4774a34}} 
+\index{ButtonManager@{ButtonManager}!ButtonPressed@{ButtonPressed}}
+\index{ButtonPressed@{ButtonPressed}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{ButtonPressed()}{ButtonPressed()}}
+{\footnotesize\ttfamily void Button\+Manager.\+Button\+Pressed (\begin{DoxyParamCaption}\item[{Virtual\+Button\+Behaviour}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00022}{22}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023     \{ \textcolor{comment}{// Activa la habitación, gracias a la función GameObject.SetActive.}}
+\DoxyCodeLine{00024         \mbox{\hyperlink{class_button_manager_a508bba8c48903d8444a6d8a8bc1037c2}{OnButtonPressed}}?.Invoke(); \textcolor{comment}{//se llama al evento OnButtonPressed.}}
+\DoxyCodeLine{00025         Debug.Log(\textcolor{stringliteral}{"{}Button Pressed"{}}); \textcolor{comment}{// envía un mensaje en caso de que el botón sea presionado.}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_button_manager_a7e2b1849193376489228c8bad4335891}\label{class_button_manager_a7e2b1849193376489228c8bad4335891}} 
+\index{ButtonManager@{ButtonManager}!ButtonReleased@{ButtonReleased}}
+\index{ButtonReleased@{ButtonReleased}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{ButtonReleased()}{ButtonReleased()}}
+{\footnotesize\ttfamily void Button\+Manager.\+Button\+Released (\begin{DoxyParamCaption}\item[{Virtual\+Button\+Behaviour}]{button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00028}{28}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029     \{ \textcolor{comment}{//tiene los mismos parámetros que el OnButtonPressed; esta se encuentra disponible por si el usuario desea agregar una sección o función al evento.}}
+\DoxyCodeLine{00030         \mbox{\hyperlink{class_button_manager_a8e1dee73f8570b4ccbf62098302fa9f5}{OnButtonReleased}}?.Invoke(); \textcolor{comment}{//se llama al evento OnButtonReleased.}}
+\DoxyCodeLine{00031         Debug.Log(\textcolor{stringliteral}{"{}Button Releaesed"{}}); \textcolor{comment}{// envía un mensaje en caso de que el botón sea presionado.}}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_button_manager_a27fc12bdbb62ef164a52ad50084411ae}\label{class_button_manager_a27fc12bdbb62ef164a52ad50084411ae}} 
+\index{ButtonManager@{ButtonManager}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Button\+Manager.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00034}{34}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035     \{ \textcolor{comment}{//remueve las instancias de ambos eventos.}}
+\DoxyCodeLine{00036         virtualButton.UnregisterOnButtonPressed(\mbox{\hyperlink{class_button_manager_a22ced41bbb3fd0d55361d57fc4774a34}{ButtonPressed}}); \textcolor{comment}{// remueve las instancias del ButtonPressed.}}
+\DoxyCodeLine{00037         virtualButton.UnregisterOnButtonReleased(\mbox{\hyperlink{class_button_manager_a7e2b1849193376489228c8bad4335891}{ButtonReleased}}); \textcolor{comment}{// remueve las instancias del ButtonReleased.}}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_button_manager_ad7b0089b2bfa10f734b8364d6818b0b1}\label{class_button_manager_ad7b0089b2bfa10f734b8364d6818b0b1}} 
+\index{ButtonManager@{ButtonManager}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Button\+Manager.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00015}{15}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016     \{ \textcolor{comment}{// función privada que registra las interacciones con el botón}}
+\DoxyCodeLine{00017         virtualButton.RegisterOnButtonPressed(\mbox{\hyperlink{class_button_manager_a22ced41bbb3fd0d55361d57fc4774a34}{ButtonPressed}});  \textcolor{comment}{//registra cuando el botón es presionado.}}
+\DoxyCodeLine{00018         virtualButton.RegisterOnButtonReleased(\mbox{\hyperlink{class_button_manager_a7e2b1849193376489228c8bad4335891}{ButtonReleased}}); \textcolor{comment}{//  y cuando no.}}
+\DoxyCodeLine{00019 }
+\DoxyCodeLine{00020         \mbox{\hyperlink{class_button_manager_ab60a3a1e6de0a96bbff413c74ccfc560}{Habitacion}}.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{//se desactiva el GameObject para que solo se muestre el entorno virtual en caso de que llegue a ser oprimido el botón.}}
+\DoxyCodeLine{00021     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_button_manager_ab60a3a1e6de0a96bbff413c74ccfc560}\label{class_button_manager_ab60a3a1e6de0a96bbff413c74ccfc560}} 
+\index{ButtonManager@{ButtonManager}!Habitacion@{Habitacion}}
+\index{Habitacion@{Habitacion}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{Habitacion}{Habitacion}}
+{\footnotesize\ttfamily Game\+Object Button\+Manager.\+Habitacion}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00013}{13}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+\mbox{\Hypertarget{class_button_manager_a508bba8c48903d8444a6d8a8bc1037c2}\label{class_button_manager_a508bba8c48903d8444a6d8a8bc1037c2}} 
+\index{ButtonManager@{ButtonManager}!OnButtonPressed@{OnButtonPressed}}
+\index{OnButtonPressed@{OnButtonPressed}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{OnButtonPressed}{OnButtonPressed}}
+{\footnotesize\ttfamily Unity\+Event Button\+Manager.\+On\+Button\+Pressed}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00010}{10}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+\mbox{\Hypertarget{class_button_manager_a8e1dee73f8570b4ccbf62098302fa9f5}\label{class_button_manager_a8e1dee73f8570b4ccbf62098302fa9f5}} 
+\index{ButtonManager@{ButtonManager}!OnButtonReleased@{OnButtonReleased}}
+\index{OnButtonReleased@{OnButtonReleased}!ButtonManager@{ButtonManager}}
+\doxysubsubsection{\texorpdfstring{OnButtonReleased}{OnButtonReleased}}
+{\footnotesize\ttfamily Unity\+Event Button\+Manager.\+On\+Button\+Released}
+
+
+
+Definición en la línea \mbox{\hyperlink{_button_manager_8cs_source_l00011}{11}} del archivo \mbox{\hyperlink{_button_manager_8cs_source}{Button\+Manager.\+cs}}.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_button_manager_8cs}{Button\+Manager.\+cs}}\end{DoxyCompactItemize}

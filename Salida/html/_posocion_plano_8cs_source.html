@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentación: Fichero Fuente PosocionPlano.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Documentación<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Definición de los Scripts del proyecto</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PosocionPlano.cs</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_posocion_plano_8cs.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System.Collections;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">using </span>System.Collections.Generic;</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="class_posocion_plano.html">    5</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="class_posocion_plano.html">PosocionPlano</a> : MonoBehaviour</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">    8</a></span>    <span class="keyword">public</span> Vector3 <a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>; <span class="comment">//Vector que se va a utilizar para almaceanr la posición del target &quot;Origen&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#af4fe9d851b4773882a5a9f67cfe08ba5">    9</a></span>    <span class="keyword">public</span> Vector3 <a class="code hl_variable" href="class_posocion_plano.html#af4fe9d851b4773882a5a9f67cfe08ba5">obtenerPosAbIzq</a>;<span class="comment">//Vector que se va a utilizar para almaceanr la posición del segundo target, con sus coordenadas se harán los cálculos necesarios</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a91db0839b5efef900d97f2e2b009b6ee">   11</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a91db0839b5efef900d97f2e2b009b6ee">Z</a>; <span class="comment">//Posicion de la mesa en el eje Z</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a94767aeabb7ba6bb9054017dc1570601">   12</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a94767aeabb7ba6bb9054017dc1570601">X</a>; <span class="comment">//Posicion de la mesa en el eje X</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#ae6848cbe587e2335566edd0d7f6f255b">   13</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#ae6848cbe587e2335566edd0d7f6f255b">Y</a>; <span class="comment">//Posicion de la mesa en el eje Y</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a79f0758756034d825db56fcfc60f058a">   14</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a79f0758756034d825db56fcfc60f058a">SZ</a>; <span class="comment">//Escala dela mesa en el eje Z</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a691ae9399c86b6cc9b3261a875877e13">   15</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a691ae9399c86b6cc9b3261a875877e13">SX</a>; <span class="comment">//Escala dela mesa en el eje X</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a01271b179132b19e7fbf1e54394b97c2">   16</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a01271b179132b19e7fbf1e54394b97c2">SY</a>; <span class="comment">//Escala dela mesa en el eje Y</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// Versi+on siguiente, esto no se está usando actualmente en el código</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Collider m_Collider;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#ad23fbec81d20da4a850ed1d54f0c9e09">   20</a></span>    <span class="keyword">public</span> Vector3 <a class="code hl_variable" href="class_posocion_plano.html#ad23fbec81d20da4a850ed1d54f0c9e09">boundPoint1</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a58aa5156d43bed289c4329a634a8ccd6">   21</a></span>    <span class="keyword">public</span> Vector3 <a class="code hl_variable" href="class_posocion_plano.html#a58aa5156d43bed289c4329a634a8ccd6">boundPoint2</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#abe4c84bd52e1750f194f6b99061d1b63">   22</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#abe4c84bd52e1750f194f6b99061d1b63">posx</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a3426fc186da9873fcc0b9642740cfc63">   23</a></span>    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="class_posocion_plano.html#a3426fc186da9873fcc0b9642740cfc63">posz</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">//Debe asegurarse de llenar estos campos en la ventana inspector</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    [SerializeField] <span class="keywordtype">string</span> NombreAbIzq; <span class="comment">//Nombre del primer target (ImageAbIzq), este se debe ubicar en la esquina inferior izquierda de la mesa</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    [SerializeField] <span class="keywordtype">string</span> NombreArDer; <span class="comment">//Nombre del segundo Image Target (ImageArDer), este se debe ubicar en la esquina superior derecha de la mesa</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//Contenedores de información de los Image targets </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    GameObject ContenedorAbIzq; <span class="comment">//En este GameObject se almacenan los datos del primer target (ImageAbIzq).</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    GameObject ContenedorArDer; <span class="comment">//En este GameObject se almacenan los datos del segundo target (ImageArDer).</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {   <span class="comment">//Al iniciar la ejecución se buscan los Image targets a través del nombre digitado en la ventana de inspector para almacenar sus datos en un contenedor.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">//Esto nos permitirá relizar opceraciones más adelante</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        ContenedorArDer = GameObject.Find(NombreArDer);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        ContenedorAbIzq = GameObject.Find(NombreAbIzq);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>       <span class="comment">//Obtener el colider puesto en el modelo 3d (ACTUALMENTE NO SÉ ESTÁ USANDO)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="comment">/*m_Collider = GetComponent&lt;Collider&gt;();</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">            boundPoint1 = m_Collider.bounds.min;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">            boundPoint2 = m_Collider.bounds.max;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">            posx = boundPoint2.x*2;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">            posz=  boundPoint2.z*2;*/</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Update se llama en cada frame</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">//Llamado a la funcion  obtenerPosicion;</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_function" href="class_posocion_plano.html#a5b4d2559c3d34b9452a0b7ac34bf2268">obtenerPosicion</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a5b4d2559c3d34b9452a0b7ac34bf2268">   54</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_posocion_plano.html#a5b4d2559c3d34b9452a0b7ac34bf2268">obtenerPosicion</a>()</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {    <span class="comment">//Esta función permite obtener el vector con la posicion de ambos targets</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a> = ContenedorArDer.transform.position;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_variable" href="class_posocion_plano.html#af4fe9d851b4773882a5a9f67cfe08ba5">obtenerPosAbIzq</a> = ContenedorAbIzq.transform.position;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">//Llamado a las  funciones que realizan calculos de escala y posición del target</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <a class="code hl_function" href="class_posocion_plano.html#a12439fc8475396b3eda54dd2cdd460bc">calculoEscala</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_function" href="class_posocion_plano.html#a8f25bd2bd4e4e60df9aaf6f1f892f2c3">calculoPosicion</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a8f25bd2bd4e4e60df9aaf6f1f892f2c3">   63</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_posocion_plano.html#a8f25bd2bd4e4e60df9aaf6f1f892f2c3">calculoPosicion</a>()</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {   <span class="comment">//Esta funcion toma las coordenadas X, Y y Z del segundo target para hacer el calculo de la posicion central de la mesa.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">//Para realizar estas operaciones de forma correcta se debe tener en cuenta que el pivote de la mesa debe estar en el centro de la misma.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_variable" href="class_posocion_plano.html#a91db0839b5efef900d97f2e2b009b6ee">Z</a> = (<a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>.z)/2;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_variable" href="class_posocion_plano.html#a94767aeabb7ba6bb9054017dc1570601">X</a> = (<a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>.x)/2;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">//Para objeter la posición en el eje Y se debe tener en cuenta la escala del modelo en terminos de la posición en Unity: En el caso de un cubo es (1,1,1)</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">//Se toma la posicion en el eje Y del segundo target y se le resta el tamaño dividido en 2, este valor se establece como negativo para transladar hacia abajo el objeto.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_variable" href="class_posocion_plano.html#ae6848cbe587e2335566edd0d7f6f255b">Y</a> = (<a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>.y-<a class="code hl_variable" href="class_posocion_plano.html#a01271b179132b19e7fbf1e54394b97c2">SY</a>/2); </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <a class="code hl_function" href="class_posocion_plano.html#ade47bbacd84bec93c4e87020de5b9125">seteoPosicion</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a12439fc8475396b3eda54dd2cdd460bc">   73</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_posocion_plano.html#a12439fc8475396b3eda54dd2cdd460bc">calculoEscala</a>()</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {   <span class="comment">//Esta funcion toma las coordenadas X, Y y Z del segundo target para establecer la escala de la mesa.</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">//Para escalar la mesa de forma correcta su modelo debe tener una escala de (1,1,1) en terminos de coordenadas en Unity </span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_variable" href="class_posocion_plano.html#a79f0758756034d825db56fcfc60f058a">SZ</a> = (<a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>.z); </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_posocion_plano.html#a691ae9399c86b6cc9b3261a875877e13">SX</a> = (<a class="code hl_variable" href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">obtenerPosArDer</a>.x);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_posocion_plano.html#a01271b179132b19e7fbf1e54394b97c2">SY</a> = 0.5f;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_function" href="class_posocion_plano.html#a9e78f6d0b0c822238aaf030a08f3714e">seteoEscala</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#ade47bbacd84bec93c4e87020de5b9125">   82</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_posocion_plano.html#ade47bbacd84bec93c4e87020de5b9125">seteoPosicion</a>() </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {   <span class="comment">//Este metodo establece la posición de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            transform.position = <span class="keyword">new</span> Vector3(<a class="code hl_variable" href="class_posocion_plano.html#a94767aeabb7ba6bb9054017dc1570601">X</a>, <a class="code hl_variable" href="class_posocion_plano.html#ae6848cbe587e2335566edd0d7f6f255b">Y</a>, <a class="code hl_variable" href="class_posocion_plano.html#a91db0839b5efef900d97f2e2b009b6ee">Z</a>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_posocion_plano.html#a9e78f6d0b0c822238aaf030a08f3714e">   86</a></span>    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_posocion_plano.html#a9e78f6d0b0c822238aaf030a08f3714e">seteoEscala</a>()</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    { <span class="comment">//Este metodo establece la escala de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="comment">//Tener en cuenta que el metodo localScale escala de manera relativa al padre de un GameObject por lo que este no debe tener un padre</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        transform.localScale = <span class="keyword">new</span> Vector3(<a class="code hl_variable" href="class_posocion_plano.html#a691ae9399c86b6cc9b3261a875877e13">SX</a>,0.5f, <a class="code hl_variable" href="class_posocion_plano.html#a79f0758756034d825db56fcfc60f058a">SZ</a>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="ttc" id="aclass_posocion_plano_html"><div class="ttname"><a href="class_posocion_plano.html">PosocionPlano</a></div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00005">PosocionPlano.cs:6</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a01271b179132b19e7fbf1e54394b97c2"><div class="ttname"><a href="class_posocion_plano.html#a01271b179132b19e7fbf1e54394b97c2">PosocionPlano.SY</a></div><div class="ttdeci">float SY</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00016">PosocionPlano.cs:16</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a12439fc8475396b3eda54dd2cdd460bc"><div class="ttname"><a href="class_posocion_plano.html#a12439fc8475396b3eda54dd2cdd460bc">PosocionPlano.calculoEscala</a></div><div class="ttdeci">void calculoEscala()</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00073">PosocionPlano.cs:73</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a3426fc186da9873fcc0b9642740cfc63"><div class="ttname"><a href="class_posocion_plano.html#a3426fc186da9873fcc0b9642740cfc63">PosocionPlano.posz</a></div><div class="ttdeci">float posz</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00023">PosocionPlano.cs:23</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a58aa5156d43bed289c4329a634a8ccd6"><div class="ttname"><a href="class_posocion_plano.html#a58aa5156d43bed289c4329a634a8ccd6">PosocionPlano.boundPoint2</a></div><div class="ttdeci">Vector3 boundPoint2</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00021">PosocionPlano.cs:21</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a5b4d2559c3d34b9452a0b7ac34bf2268"><div class="ttname"><a href="class_posocion_plano.html#a5b4d2559c3d34b9452a0b7ac34bf2268">PosocionPlano.obtenerPosicion</a></div><div class="ttdeci">void obtenerPosicion()</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00054">PosocionPlano.cs:54</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a691ae9399c86b6cc9b3261a875877e13"><div class="ttname"><a href="class_posocion_plano.html#a691ae9399c86b6cc9b3261a875877e13">PosocionPlano.SX</a></div><div class="ttdeci">float SX</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00015">PosocionPlano.cs:15</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a79f0758756034d825db56fcfc60f058a"><div class="ttname"><a href="class_posocion_plano.html#a79f0758756034d825db56fcfc60f058a">PosocionPlano.SZ</a></div><div class="ttdeci">float SZ</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00014">PosocionPlano.cs:14</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a8f25bd2bd4e4e60df9aaf6f1f892f2c3"><div class="ttname"><a href="class_posocion_plano.html#a8f25bd2bd4e4e60df9aaf6f1f892f2c3">PosocionPlano.calculoPosicion</a></div><div class="ttdeci">void calculoPosicion()</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00063">PosocionPlano.cs:63</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a91db0839b5efef900d97f2e2b009b6ee"><div class="ttname"><a href="class_posocion_plano.html#a91db0839b5efef900d97f2e2b009b6ee">PosocionPlano.Z</a></div><div class="ttdeci">float Z</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00011">PosocionPlano.cs:11</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a94767aeabb7ba6bb9054017dc1570601"><div class="ttname"><a href="class_posocion_plano.html#a94767aeabb7ba6bb9054017dc1570601">PosocionPlano.X</a></div><div class="ttdeci">float X</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00012">PosocionPlano.cs:12</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_a9e78f6d0b0c822238aaf030a08f3714e"><div class="ttname"><a href="class_posocion_plano.html#a9e78f6d0b0c822238aaf030a08f3714e">PosocionPlano.seteoEscala</a></div><div class="ttdeci">void seteoEscala()</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00086">PosocionPlano.cs:86</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_ab8785fac6918736141f4e8e86e602c2d"><div class="ttname"><a href="class_posocion_plano.html#ab8785fac6918736141f4e8e86e602c2d">PosocionPlano.obtenerPosArDer</a></div><div class="ttdeci">Vector3 obtenerPosArDer</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00008">PosocionPlano.cs:8</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_abe4c84bd52e1750f194f6b99061d1b63"><div class="ttname"><a href="class_posocion_plano.html#abe4c84bd52e1750f194f6b99061d1b63">PosocionPlano.posx</a></div><div class="ttdeci">float posx</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00022">PosocionPlano.cs:22</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_ad23fbec81d20da4a850ed1d54f0c9e09"><div class="ttname"><a href="class_posocion_plano.html#ad23fbec81d20da4a850ed1d54f0c9e09">PosocionPlano.boundPoint1</a></div><div class="ttdeci">Vector3 boundPoint1</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00020">PosocionPlano.cs:20</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_ade47bbacd84bec93c4e87020de5b9125"><div class="ttname"><a href="class_posocion_plano.html#ade47bbacd84bec93c4e87020de5b9125">PosocionPlano.seteoPosicion</a></div><div class="ttdeci">void seteoPosicion()</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00082">PosocionPlano.cs:82</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_ae6848cbe587e2335566edd0d7f6f255b"><div class="ttname"><a href="class_posocion_plano.html#ae6848cbe587e2335566edd0d7f6f255b">PosocionPlano.Y</a></div><div class="ttdeci">float Y</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00013">PosocionPlano.cs:13</a></div></div>
+<div class="ttc" id="aclass_posocion_plano_html_af4fe9d851b4773882a5a9f67cfe08ba5"><div class="ttname"><a href="class_posocion_plano.html#af4fe9d851b4773882a5a9f67cfe08ba5">PosocionPlano.obtenerPosAbIzq</a></div><div class="ttdeci">Vector3 obtenerPosAbIzq</div><div class="ttdef"><b>Definition:</b> <a href="_posocion_plano_8cs_source.html#l00009">PosocionPlano.cs:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,932 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment Documentaci\'F3n  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}Documentaci\'F3n}
+{\comment Generado por doxygen 1.9.4.}
+{\creatim \yr2022\mo5\dy21\hr14\min7\sec40}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Documentaci\'F3n}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Versi\'F3n 1.0\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt S\'E1bado, 21 de Mayo de 2022 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Tabla de contenidos\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indice jer\'E1rquico\par \pard\plain 
+{\tc \v Indice jer\'E1rquico}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Jerarqu\'EDa de la clase\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Esta lista de herencias esta ordenada aproximadamente por orden alfab\'E9tico:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+MonoBehaviour
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+ButtonManager\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+PosocionPlano\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CDndice de clases\par \pard\plain 
+{\tc \v \'CDndice de clases}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de clases\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Lista de las clases, estructuras, uniones e interfaces con una breve descripci\'F3n:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ButtonManager} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PosocionPlano} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Indice de archivos\par \pard\plain 
+{\tc \v Indice de archivos}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Lista de archivos\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Lista de todos los archivos con descripciones breves:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b ButtonManager.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PosocionPlano.cs} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentaci\'F3n de las clases{\tc \v Documentaci\'F3n de las clases}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Referencia de la Clase ButtonManager\par \pard\plain 
+{\tc\tcl2 \v ButtonManager}
+{\xe \v ButtonManager}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+Diagrama de herencias de ButtonManager{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_button_manager.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+M\'E9todos p\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OnEnable} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ButtonPressed} (VirtualButtonBehaviour button)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ButtonReleased} (VirtualButtonBehaviour button)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b OnDestroy} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atributos p\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+UnityEvent {\b OnButtonPressed}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+UnityEvent {\b OnButtonReleased}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+GameObject {\b Habitacion}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descripci\'F3n detallada\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definici\'F3n en la l\'EDnea {\b 7} del archivo {\b ButtonManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentaci\'F3n de las funciones miembro\par
+\pard\plain 
+{\xe \v ButtonPressed\:ButtonManager}
+{\xe \v ButtonManager\:ButtonPressed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ButtonManager.ButtonPressed (VirtualButtonBehaviour  {\i button}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 22} del archivo {\b ButtonManager.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00023     \{ {\cf20 // Activa la habitaci\'F3n, gracias a la funci\'F3n GameObject.SetActive.}\par
+00024         OnButtonPressed?.Invoke(); {\cf20 //se llama al evento OnButtonPressed.}\par
+00025         Debug.Log({\cf22 "Button Pressed"}); {\cf20 // env\'EDa un mensaje en caso de que el bot\'F3n sea presionado.}\par
+00026 \par
+00027     \}\par
+}
+}
+{\xe \v ButtonReleased\:ButtonManager}
+{\xe \v ButtonManager\:ButtonReleased}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ButtonManager.ButtonReleased (VirtualButtonBehaviour  {\i button}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 28} del archivo {\b ButtonManager.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00029     \{ {\cf20 //tiene los mismos par\'E1metros que el OnButtonPressed; esta se encuentra disponible por si el usuario desea agregar una secci\'F3n o funci\'F3n al evento.}\par
+00030         OnButtonReleased?.Invoke(); {\cf20 //se llama al evento OnButtonReleased.}\par
+00031         Debug.Log({\cf22 "Button Releaesed"}); {\cf20 // env\'EDa un mensaje en caso de que el bot\'F3n sea presionado.}\par
+00032 \par
+00033     \}\par
+}
+}
+{\xe \v OnDestroy\:ButtonManager}
+{\xe \v ButtonManager\:OnDestroy}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ButtonManager.OnDestroy (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 34} del archivo {\b ButtonManager.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00035     \{ {\cf20 //remueve las instancias de ambos eventos.}\par
+00036         virtualButton.UnregisterOnButtonPressed(ButtonPressed); {\cf20 // remueve las instancias del ButtonPressed.}\par
+00037         virtualButton.UnregisterOnButtonReleased(ButtonReleased); {\cf20 // remueve las instancias del ButtonReleased.}\par
+00038 \par
+00039     \}\par
+}
+}
+{\xe \v OnEnable\:ButtonManager}
+{\xe \v ButtonManager\:OnEnable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void ButtonManager.OnEnable (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 15} del archivo {\b ButtonManager.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00016     \{ {\cf20 // funci\'F3n privada que registra las interacciones con el bot\'F3n}\par
+00017         virtualButton.RegisterOnButtonPressed(ButtonPressed);  {\cf20 //registra cuando el bot\'F3n es presionado.}\par
+00018         virtualButton.RegisterOnButtonReleased(ButtonReleased); {\cf20 //  y cuando no.}\par
+00019 \par
+00020         Habitacion.SetActive({\cf17 false}); {\cf20 //se desactiva el GameObject para que solo se muestre el entorno virtual en caso de que llegue a ser oprimido el bot\'F3n.}\par
+00021     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentaci\'F3n de los datos miembro\par
+\pard\plain 
+{\xe \v Habitacion\:ButtonManager}
+{\xe \v ButtonManager\:Habitacion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+GameObject ButtonManager.Habitacion}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 13} del archivo {\b ButtonManager.cs}.}\par
+}
+{\xe \v OnButtonPressed\:ButtonManager}
+{\xe \v ButtonManager\:OnButtonPressed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+UnityEvent ButtonManager.OnButtonPressed}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 10} del archivo {\b ButtonManager.cs}.}\par
+}
+{\xe \v OnButtonReleased\:ButtonManager}
+{\xe \v ButtonManager\:OnButtonReleased}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+UnityEvent ButtonManager.OnButtonReleased}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 11} del archivo {\b ButtonManager.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentaci\'F3n para esta clase fue generada a partir del siguiente fichero:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ButtonManager.cs}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Referencia de la Clase PosocionPlano\par \pard\plain 
+{\tc\tcl2 \v PosocionPlano}
+{\xe \v PosocionPlano}
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+Diagrama de herencias de PosocionPlano{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_posocion_plano.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+M\'E9todos p\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b obtenerPosicion} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b calculoPosicion} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b calculoEscala} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b seteoPosicion} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b seteoEscala} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Atributos p\'FAblicos\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Vector3 {\b obtenerPosArDer}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Vector3 {\b obtenerPosAbIzq}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Z}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b X}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Y}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b SZ}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b SX}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b SY}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Vector3 {\b boundPoint1}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Vector3 {\b boundPoint2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b posx}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b posz}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Descripci\'F3n detallada\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {
+Definici\'F3n en la l\'EDnea {\b 5} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentaci\'F3n de las funciones miembro\par
+\pard\plain 
+{\xe \v calculoEscala\:PosocionPlano}
+{\xe \v PosocionPlano\:calculoEscala}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PosocionPlano.calculoEscala (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 73} del archivo {\b PosocionPlano.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00074     \{   {\cf20 //Esta funcion toma las coordenadas X, Y y Z del segundo target para establecer la escala de la mesa.}\par
+00075         {\cf20 //Para escalar la mesa de forma correcta su modelo debe tener una escala de (1,1,1) en terminos de coordenadas en Unity }\par
+00076             SZ = (obtenerPosArDer.z); \par
+00077             SX = (obtenerPosArDer.x);\par
+00078             SY = 0.5f;\par
+00079             seteoEscala();\par
+00080     \}\par
+}
+}
+{\xe \v calculoPosicion\:PosocionPlano}
+{\xe \v PosocionPlano\:calculoPosicion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PosocionPlano.calculoPosicion (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 63} del archivo {\b PosocionPlano.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00064     \{   {\cf20 //Esta funcion toma las coordenadas X, Y y Z del segundo target para hacer el calculo de la posicion central de la mesa.}\par
+00065         {\cf20 //Para realizar estas operaciones de forma correcta se debe tener en cuenta que el pivote de la mesa debe estar en el centro de la misma.}\par
+00066             Z = (obtenerPosArDer.z)/2;\par
+00067             X = (obtenerPosArDer.x)/2;\par
+00068         {\cf20 //Para objeter la posici\'F3n en el eje Y se debe tener en cuenta la escala del modelo en terminos de la posici\'F3n en Unity: En el caso de un cubo es (1,1,1)}\par
+00069         {\cf20 //Se toma la posicion en el eje Y del segundo target y se le resta el tama\'F1o dividido en 2, este valor se establece como negativo para transladar hacia abajo el objeto.}\par
+00070             Y = (obtenerPosArDer.y-SY/2); \par
+00071                 seteoPosicion();\par
+00072     \}\par
+}
+}
+{\xe \v obtenerPosicion\:PosocionPlano}
+{\xe \v PosocionPlano\:obtenerPosicion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PosocionPlano.obtenerPosicion (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 54} del archivo {\b PosocionPlano.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00055     \{    {\cf20 //Esta funci\'F3n permite obtener el vector con la posicion de ambos targets}\par
+00056             obtenerPosArDer = ContenedorArDer.transform.position;\par
+00057             obtenerPosAbIzq = ContenedorAbIzq.transform.position;\par
+00058         {\cf20 //Llamado a las  funciones que realizan calculos de escala y posici\'F3n del target}\par
+00059             calculoEscala();\par
+00060             calculoPosicion();\par
+00061         \par
+00062     \}\par
+}
+}
+{\xe \v seteoEscala\:PosocionPlano}
+{\xe \v PosocionPlano\:seteoEscala}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PosocionPlano.seteoEscala (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 86} del archivo {\b PosocionPlano.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00087     \{ {\cf20 //Este metodo establece la escala de la mesa seg\'FAn los calculos realizados anteriormente por medio de la creaci\'F3n de un Vector}\par
+00088         {\cf20 //Tener en cuenta que el metodo localScale escala de manera relativa al padre de un GameObject por lo que este no debe tener un padre}\par
+00089         transform.localScale = {\cf17 new} Vector3(SX,0.5f, SZ);\par
+00090     \}\par
+}
+}
+{\xe \v seteoPosicion\:PosocionPlano}
+{\xe \v PosocionPlano\:seteoPosicion}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void PosocionPlano.seteoPosicion (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 82} del archivo {\b PosocionPlano.cs}.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00083     \{   {\cf20 //Este metodo establece la posici\'F3n de la mesa seg\'FAn los calculos realizados anteriormente por medio de la creaci\'F3n de un Vector}\par
+00084             transform.position = {\cf17 new} Vector3(X, Y, Z);\par
+00085     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentaci\'F3n de los datos miembro\par
+\pard\plain 
+{\xe \v boundPoint1\:PosocionPlano}
+{\xe \v PosocionPlano\:boundPoint1}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vector3 PosocionPlano.boundPoint1}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 20} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v boundPoint2\:PosocionPlano}
+{\xe \v PosocionPlano\:boundPoint2}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vector3 PosocionPlano.boundPoint2}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 21} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v obtenerPosAbIzq\:PosocionPlano}
+{\xe \v PosocionPlano\:obtenerPosAbIzq}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vector3 PosocionPlano.obtenerPosAbIzq}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 9} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v obtenerPosArDer\:PosocionPlano}
+{\xe \v PosocionPlano\:obtenerPosArDer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Vector3 PosocionPlano.obtenerPosArDer}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 8} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v posx\:PosocionPlano}
+{\xe \v PosocionPlano\:posx}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.posx}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 22} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v posz\:PosocionPlano}
+{\xe \v PosocionPlano\:posz}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.posz}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 23} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v SX\:PosocionPlano}
+{\xe \v PosocionPlano\:SX}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.SX}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 15} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v SY\:PosocionPlano}
+{\xe \v PosocionPlano\:SY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.SY}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 16} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v SZ\:PosocionPlano}
+{\xe \v PosocionPlano\:SZ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.SZ}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 14} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v X\:PosocionPlano}
+{\xe \v PosocionPlano\:X}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.X}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 12} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v Y\:PosocionPlano}
+{\xe \v PosocionPlano\:Y}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.Y}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 13} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\xe \v Z\:PosocionPlano}
+{\xe \v PosocionPlano\:Z}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float PosocionPlano.Z}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Definici\'F3n en la l\'EDnea {\b 11} del archivo {\b PosocionPlano.cs}.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentaci\'F3n para esta clase fue generada a partir del siguiente fichero:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b PosocionPlano.cs}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentaci\'F3n de archivos{\tc \v Documentaci\'F3n de archivos}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Referencia del Archivo ButtonManager.cs\par \pard\plain 
+{\tc\tcl2 \v ButtonManager.cs}
+{\xe \v ButtonManager.cs}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Clases\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ButtonManager}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ButtonManager.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Ir a la documentaci\'F3n de este archivo.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 {\cf17 using }UnityEngine.Events;\par
+00005 {\cf17 using }Vuforia;\par
+00006 \par
+00007 {\cf17 public} {\cf17 class }ButtonManager : MonoBehaviour\par
+00008 \{\par
+00009     [SerializeField] {\cf17 private} VirtualButtonBehaviour virtualButton;\par
+00010     {\cf17 public} UnityEvent OnButtonPressed; {\cf20 // Se crean dos UnityEvent, los cuales almacenar\'E1n las acciones al momento de oprimir el bot\'F3n.}\par
+00011     {\cf17 public} UnityEvent OnButtonReleased; \par
+00012     \par
+00013     {\cf17 public} GameObject Habitacion; {\cf20 // sirve para enlazar el modelo del entorno al virtual button.}\par
+00014 \par
+00015     {\cf17 public} {\cf18 void} OnEnable()\par
+00016     \{ {\cf20 // funci\'F3n privada que registra las interacciones con el bot\'F3n}\par
+00017         virtualButton.RegisterOnButtonPressed(ButtonPressed);  {\cf20 //registra cuando el bot\'F3n es presionado.}\par
+00018         virtualButton.RegisterOnButtonReleased(ButtonReleased); {\cf20 //  y cuando no.}\par
+00019 \par
+00020         Habitacion.SetActive({\cf17 false}); {\cf20 //se desactiva el GameObject para que solo se muestre el entorno virtual en caso de que llegue a ser oprimido el bot\'F3n.}\par
+00021     \}\par
+00022     {\cf17 public} {\cf18 void} ButtonPressed(VirtualButtonBehaviour button)\par
+00023     \{ {\cf20 // Activa la habitaci\'F3n, gracias a la funci\'F3n GameObject.SetActive.}\par
+00024         OnButtonPressed?.Invoke(); {\cf20 //se llama al evento OnButtonPressed.}\par
+00025         Debug.Log({\cf22 "Button Pressed"}); {\cf20 // env\'EDa un mensaje en caso de que el bot\'F3n sea presionado.}\par
+00026 \par
+00027     \}\par
+00028     {\cf17 public} {\cf18 void} ButtonReleased(VirtualButtonBehaviour button)\par
+00029     \{ {\cf20 //tiene los mismos par\'E1metros que el OnButtonPressed; esta se encuentra disponible por si el usuario desea agregar una secci\'F3n o funci\'F3n al evento.}\par
+00030         OnButtonReleased?.Invoke(); {\cf20 //se llama al evento OnButtonReleased.}\par
+00031         Debug.Log({\cf22 "Button Releaesed"}); {\cf20 // env\'EDa un mensaje en caso de que el bot\'F3n sea presionado.}\par
+00032 \par
+00033     \}\par
+00034     {\cf17 public} {\cf18 void} OnDestroy()\par
+00035     \{ {\cf20 //remueve las instancias de ambos eventos.}\par
+00036         virtualButton.UnregisterOnButtonPressed(ButtonPressed); {\cf20 // remueve las instancias del ButtonPressed.}\par
+00037         virtualButton.UnregisterOnButtonReleased(ButtonReleased); {\cf20 // remueve las instancias del ButtonReleased.}\par
+00038 \par
+00039     \}\par
+00040 \par
+00041 \}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Referencia del Archivo PosocionPlano.cs\par \pard\plain 
+{\tc\tcl2 \v PosocionPlano.cs}
+{\xe \v PosocionPlano.cs}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Clases\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PosocionPlano}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+PosocionPlano.cs\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+Ir a la documentaci\'F3n de este archivo.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00001 {\cf17 using }System.Collections;\par
+00002 {\cf17 using }System.Collections.Generic;\par
+00003 {\cf17 using }UnityEngine;\par
+00004 \par
+00005 {\cf17 public} {\cf17 class }PosocionPlano : MonoBehaviour\par
+00006 \{\par
+00007 \par
+00008     {\cf17 public} Vector3 obtenerPosArDer; {\cf20 //Vector que se va a utilizar para almaceanr la posici\'F3n del target "Origen"}\par
+00009     {\cf17 public} Vector3 obtenerPosAbIzq;{\cf20 //Vector que se va a utilizar para almaceanr la posici\'F3n del segundo target, con sus coordenadas se har\'E1n los c\'E1lculos necesarios}\par
+00010 \par
+00011     {\cf17 public} {\cf18 float} Z; {\cf20 //Posicion de la mesa en el eje Z}\par
+00012     {\cf17 public} {\cf18 float} X; {\cf20 //Posicion de la mesa en el eje X}\par
+00013     {\cf17 public} {\cf18 float} Y; {\cf20 //Posicion de la mesa en el eje Y}\par
+00014     {\cf17 public} {\cf18 float} SZ; {\cf20 //Escala dela mesa en el eje Z}\par
+00015     {\cf17 public} {\cf18 float} SX; {\cf20 //Escala dela mesa en el eje X}\par
+00016     {\cf17 public} {\cf18 float} SY; {\cf20 //Escala dela mesa en el eje Y}\par
+00017 \par
+00018     {\cf20 // Versi+on siguiente, esto no se est\'E1 usando actualmente en el c\'F3digo}\par
+00019     Collider m_Collider;\par
+00020     {\cf17 public} Vector3 boundPoint1;\par
+00021     {\cf17 public} Vector3 boundPoint2;\par
+00022     {\cf17 public} {\cf18 float} posx;\par
+00023     {\cf17 public} {\cf18 float} posz;\par
+00024 \par
+00025     {\cf20 //Debe asegurarse de llenar estos campos en la ventana inspector}\par
+00026     [SerializeField] {\cf18 string} NombreAbIzq; {\cf20 //Nombre del primer target (ImageAbIzq), este se debe ubicar en la esquina inferior izquierda de la mesa}\par
+00027     [SerializeField] {\cf18 string} NombreArDer; {\cf20 //Nombre del segundo Image Target (ImageArDer), este se debe ubicar en la esquina superior derecha de la mesa}\par
+00028 \par
+00029     {\cf20 //Contenedores de informaci\'F3n de los Image targets }\par
+00030     GameObject ContenedorAbIzq; {\cf20 //En este GameObject se almacenan los datos del primer target (ImageAbIzq).}\par
+00031     GameObject ContenedorArDer; {\cf20 //En este GameObject se almacenan los datos del segundo target (ImageArDer).}\par
+00032 \par
+00033     {\cf18 void} Start()\par
+00034     \{   {\cf20 //Al iniciar la ejecuci\'F3n se buscan los Image targets a trav\'E9s del nombre digitado en la ventana de inspector para almacenar sus datos en un contenedor.}\par
+00035         {\cf20 //Esto nos permitir\'E1 relizar opceraciones m\'E1s adelante}\par
+00036         ContenedorArDer = GameObject.Find(NombreArDer);\par
+00037         ContenedorAbIzq = GameObject.Find(NombreAbIzq);\par
+00038 \par
+00039        {\cf20 //Obtener el colider puesto en el modelo 3d (ACTUALMENTE NO S\'C9 EST\'C1 USANDO)}\par
+00040             {\cf20 /*m_Collider = GetComponent<Collider>();}\par
+00041 {\cf20             boundPoint1 = m_Collider.bounds.min;}\par
+00042 {\cf20             boundPoint2 = m_Collider.bounds.max;}\par
+00043 {\cf20             posx = boundPoint2.x*2;}\par
+00044 {\cf20             posz=  boundPoint2.z*2;*/}\par
+00045 \par
+00046     \}\par
+00047 \par
+00048     {\cf20 // Update se llama en cada frame}\par
+00049     {\cf18 void} Update()\par
+00050     \{\par
+00051         {\cf20 //Llamado a la funcion  obtenerPosicion;}\par
+00052         obtenerPosicion();\par
+00053     \}\par
+00054     {\cf17 public} {\cf18 void} obtenerPosicion()\par
+00055     \{    {\cf20 //Esta funci\'F3n permite obtener el vector con la posicion de ambos targets}\par
+00056             obtenerPosArDer = ContenedorArDer.transform.position;\par
+00057             obtenerPosAbIzq = ContenedorAbIzq.transform.position;\par
+00058         {\cf20 //Llamado a las  funciones que realizan calculos de escala y posici\'F3n del target}\par
+00059             calculoEscala();\par
+00060             calculoPosicion();\par
+00061         \par
+00062     \}\par
+00063     {\cf17 public} {\cf18 void} calculoPosicion()\par
+00064     \{   {\cf20 //Esta funcion toma las coordenadas X, Y y Z del segundo target para hacer el calculo de la posicion central de la mesa.}\par
+00065         {\cf20 //Para realizar estas operaciones de forma correcta se debe tener en cuenta que el pivote de la mesa debe estar en el centro de la misma.}\par
+00066             Z = (obtenerPosArDer.z)/2;\par
+00067             X = (obtenerPosArDer.x)/2;\par
+00068         {\cf20 //Para objeter la posici\'F3n en el eje Y se debe tener en cuenta la escala del modelo en terminos de la posici\'F3n en Unity: En el caso de un cubo es (1,1,1)}\par
+00069         {\cf20 //Se toma la posicion en el eje Y del segundo target y se le resta el tama\'F1o dividido en 2, este valor se establece como negativo para transladar hacia abajo el objeto.}\par
+00070             Y = (obtenerPosArDer.y-SY/2); \par
+00071                 seteoPosicion();\par
+00072     \}\par
+00073     {\cf17 public} {\cf18 void} calculoEscala()\par
+00074     \{   {\cf20 //Esta funcion toma las coordenadas X, Y y Z del segundo target para establecer la escala de la mesa.}\par
+00075         {\cf20 //Para escalar la mesa de forma correcta su modelo debe tener una escala de (1,1,1) en terminos de coordenadas en Unity }\par
+00076             SZ = (obtenerPosArDer.z); \par
+00077             SX = (obtenerPosArDer.x);\par
+00078             SY = 0.5f;\par
+00079             seteoEscala();\par
+00080     \}\par
+00081 \par
+00082     {\cf17 public} {\cf18 void} seteoPosicion() \par
+00083     \{   {\cf20 //Este metodo establece la posici\'F3n de la mesa seg\'FAn los calculos realizados anteriormente por medio de la creaci\'F3n de un Vector}\par
+00084             transform.position = {\cf17 new} Vector3(X, Y, Z);\par
+00085     \}\par
+00086     {\cf17 public} {\cf18 void} seteoEscala()\par
+00087     \{ {\cf20 //Este metodo establece la escala de la mesa seg\'FAn los calculos realizados anteriormente por medio de la creaci\'F3n de un Vector}\par
+00088         {\cf20 //Tener en cuenta que el metodo localScale escala de manera relativa al padre de un GameObject por lo que este no debe tener un padre}\par
+00089         transform.localScale = {\cf17 new} Vector3(SX,0.5f, SZ);\par
+00090     \}\par
+00091 \}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CDndice\par 
+\pard\plain 
+{\tc \v \'CDndice}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

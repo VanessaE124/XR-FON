@@ -1,0 +1,287 @@
+\hypertarget{class_posocion_plano}{}\doxysection{Referencia de la Clase Posocion\+Plano}
+\label{class_posocion_plano}\index{PosocionPlano@{PosocionPlano}}
+Diagrama de herencias de Posocion\+Plano\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_posocion_plano}
+\end{center}
+\end{figure}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}{obtener\+Posicion}} ()
+\item 
+void \mbox{\hyperlink{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}{calculo\+Posicion}} ()
+\item 
+void \mbox{\hyperlink{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}{calculo\+Escala}} ()
+\item 
+void \mbox{\hyperlink{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}{seteo\+Posicion}} ()
+\item 
+void \mbox{\hyperlink{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}{seteo\+Escala}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtener\+Pos\+Ar\+Der}}
+\item 
+Vector3 \mbox{\hyperlink{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}{obtener\+Pos\+Ab\+Izq}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}}
+\item 
+Vector3 \mbox{\hyperlink{class_posocion_plano_ad23fbec81d20da4a850ed1d54f0c9e09}{bound\+Point1}}
+\item 
+Vector3 \mbox{\hyperlink{class_posocion_plano_a58aa5156d43bed289c4329a634a8ccd6}{bound\+Point2}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_abe4c84bd52e1750f194f6b99061d1b63}{posx}}
+\item 
+float \mbox{\hyperlink{class_posocion_plano_a3426fc186da9873fcc0b9642740cfc63}{posz}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00005}{5}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}\label{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}} 
+\index{PosocionPlano@{PosocionPlano}!calculoEscala@{calculoEscala}}
+\index{calculoEscala@{calculoEscala}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{calculoEscala()}{calculoEscala()}}
+{\footnotesize\ttfamily void Posocion\+Plano.\+calculo\+Escala (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00073}{73}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00074     \{   \textcolor{comment}{//Esta funcion toma las coordenadas X, Y y Z del segundo target para establecer la escala de la mesa.}}
+\DoxyCodeLine{00075         \textcolor{comment}{//Para escalar la mesa de forma correcta su modelo debe tener una escala de (1,1,1) en terminos de coordenadas en Unity }}
+\DoxyCodeLine{00076             \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.z); }
+\DoxyCodeLine{00077             \mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.x);}
+\DoxyCodeLine{00078             \mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}} = 0.5f;}
+\DoxyCodeLine{00079             \mbox{\hyperlink{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}{seteoEscala}}();}
+\DoxyCodeLine{00080     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}\label{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}} 
+\index{PosocionPlano@{PosocionPlano}!calculoPosicion@{calculoPosicion}}
+\index{calculoPosicion@{calculoPosicion}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{calculoPosicion()}{calculoPosicion()}}
+{\footnotesize\ttfamily void Posocion\+Plano.\+calculo\+Posicion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00063}{63}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00064     \{   \textcolor{comment}{//Esta funcion toma las coordenadas X, Y y Z del segundo target para hacer el calculo de la posicion central de la mesa.}}
+\DoxyCodeLine{00065         \textcolor{comment}{//Para realizar estas operaciones de forma correcta se debe tener en cuenta que el pivote de la mesa debe estar en el centro de la misma.}}
+\DoxyCodeLine{00066             \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.z)/2;}
+\DoxyCodeLine{00067             \mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.x)/2;}
+\DoxyCodeLine{00068         \textcolor{comment}{//Para objeter la posición en el eje Y se debe tener en cuenta la escala del modelo en terminos de la posición en Unity: En el caso de un cubo es (1,1,1)}}
+\DoxyCodeLine{00069         \textcolor{comment}{//Se toma la posicion en el eje Y del segundo target y se le resta el tamaño dividido en 2, este valor se establece como negativo para transladar hacia abajo el objeto.}}
+\DoxyCodeLine{00070             \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}} = (\mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}}.y-\/\mbox{\hyperlink{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}{SY}}/2); }
+\DoxyCodeLine{00071                 \mbox{\hyperlink{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}{seteoPosicion}}();}
+\DoxyCodeLine{00072     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}\label{class_posocion_plano_a5b4d2559c3d34b9452a0b7ac34bf2268}} 
+\index{PosocionPlano@{PosocionPlano}!obtenerPosicion@{obtenerPosicion}}
+\index{obtenerPosicion@{obtenerPosicion}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{obtenerPosicion()}{obtenerPosicion()}}
+{\footnotesize\ttfamily void Posocion\+Plano.\+obtener\+Posicion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00054}{54}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055     \{    \textcolor{comment}{//Esta función permite obtener el vector con la posicion de ambos targets}}
+\DoxyCodeLine{00056             \mbox{\hyperlink{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}{obtenerPosArDer}} = ContenedorArDer.transform.position;}
+\DoxyCodeLine{00057             \mbox{\hyperlink{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}{obtenerPosAbIzq}} = ContenedorAbIzq.transform.position;}
+\DoxyCodeLine{00058         \textcolor{comment}{//Llamado a las  funciones que realizan calculos de escala y posición del target}}
+\DoxyCodeLine{00059             \mbox{\hyperlink{class_posocion_plano_a12439fc8475396b3eda54dd2cdd460bc}{calculoEscala}}();}
+\DoxyCodeLine{00060             \mbox{\hyperlink{class_posocion_plano_a8f25bd2bd4e4e60df9aaf6f1f892f2c3}{calculoPosicion}}();}
+\DoxyCodeLine{00061         }
+\DoxyCodeLine{00062     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}\label{class_posocion_plano_a9e78f6d0b0c822238aaf030a08f3714e}} 
+\index{PosocionPlano@{PosocionPlano}!seteoEscala@{seteoEscala}}
+\index{seteoEscala@{seteoEscala}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{seteoEscala()}{seteoEscala()}}
+{\footnotesize\ttfamily void Posocion\+Plano.\+seteo\+Escala (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00086}{86}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087     \{ \textcolor{comment}{//Este metodo establece la escala de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector}}
+\DoxyCodeLine{00088         \textcolor{comment}{//Tener en cuenta que el metodo localScale escala de manera relativa al padre de un GameObject por lo que este no debe tener un padre}}
+\DoxyCodeLine{00089         transform.localScale = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}{SX}},0.5f, \mbox{\hyperlink{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}{SZ}});}
+\DoxyCodeLine{00090     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}\label{class_posocion_plano_ade47bbacd84bec93c4e87020de5b9125}} 
+\index{PosocionPlano@{PosocionPlano}!seteoPosicion@{seteoPosicion}}
+\index{seteoPosicion@{seteoPosicion}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{seteoPosicion()}{seteoPosicion()}}
+{\footnotesize\ttfamily void Posocion\+Plano.\+seteo\+Posicion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00082}{82}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083     \{   \textcolor{comment}{//Este metodo establece la posición de la mesa según los calculos realizados anteriormente por medio de la creación de un Vector}}
+\DoxyCodeLine{00084             transform.position = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}{X}}, \mbox{\hyperlink{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}{Y}}, \mbox{\hyperlink{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}{Z}});}
+\DoxyCodeLine{00085     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_posocion_plano_ad23fbec81d20da4a850ed1d54f0c9e09}\label{class_posocion_plano_ad23fbec81d20da4a850ed1d54f0c9e09}} 
+\index{PosocionPlano@{PosocionPlano}!boundPoint1@{boundPoint1}}
+\index{boundPoint1@{boundPoint1}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{boundPoint1}{boundPoint1}}
+{\footnotesize\ttfamily Vector3 Posocion\+Plano.\+bound\+Point1}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00020}{20}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a58aa5156d43bed289c4329a634a8ccd6}\label{class_posocion_plano_a58aa5156d43bed289c4329a634a8ccd6}} 
+\index{PosocionPlano@{PosocionPlano}!boundPoint2@{boundPoint2}}
+\index{boundPoint2@{boundPoint2}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{boundPoint2}{boundPoint2}}
+{\footnotesize\ttfamily Vector3 Posocion\+Plano.\+bound\+Point2}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00021}{21}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}\label{class_posocion_plano_af4fe9d851b4773882a5a9f67cfe08ba5}} 
+\index{PosocionPlano@{PosocionPlano}!obtenerPosAbIzq@{obtenerPosAbIzq}}
+\index{obtenerPosAbIzq@{obtenerPosAbIzq}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{obtenerPosAbIzq}{obtenerPosAbIzq}}
+{\footnotesize\ttfamily Vector3 Posocion\+Plano.\+obtener\+Pos\+Ab\+Izq}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00009}{9}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}\label{class_posocion_plano_ab8785fac6918736141f4e8e86e602c2d}} 
+\index{PosocionPlano@{PosocionPlano}!obtenerPosArDer@{obtenerPosArDer}}
+\index{obtenerPosArDer@{obtenerPosArDer}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{obtenerPosArDer}{obtenerPosArDer}}
+{\footnotesize\ttfamily Vector3 Posocion\+Plano.\+obtener\+Pos\+Ar\+Der}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00008}{8}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_abe4c84bd52e1750f194f6b99061d1b63}\label{class_posocion_plano_abe4c84bd52e1750f194f6b99061d1b63}} 
+\index{PosocionPlano@{PosocionPlano}!posx@{posx}}
+\index{posx@{posx}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{posx}{posx}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+posx}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00022}{22}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a3426fc186da9873fcc0b9642740cfc63}\label{class_posocion_plano_a3426fc186da9873fcc0b9642740cfc63}} 
+\index{PosocionPlano@{PosocionPlano}!posz@{posz}}
+\index{posz@{posz}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{posz}{posz}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+posz}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00023}{23}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}\label{class_posocion_plano_a691ae9399c86b6cc9b3261a875877e13}} 
+\index{PosocionPlano@{PosocionPlano}!SX@{SX}}
+\index{SX@{SX}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{SX}{SX}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+SX}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00015}{15}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}\label{class_posocion_plano_a01271b179132b19e7fbf1e54394b97c2}} 
+\index{PosocionPlano@{PosocionPlano}!SY@{SY}}
+\index{SY@{SY}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{SY}{SY}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+SY}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00016}{16}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}\label{class_posocion_plano_a79f0758756034d825db56fcfc60f058a}} 
+\index{PosocionPlano@{PosocionPlano}!SZ@{SZ}}
+\index{SZ@{SZ}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{SZ}{SZ}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+SZ}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00014}{14}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}\label{class_posocion_plano_a94767aeabb7ba6bb9054017dc1570601}} 
+\index{PosocionPlano@{PosocionPlano}!X@{X}}
+\index{X@{X}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+X}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00012}{12}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}\label{class_posocion_plano_ae6848cbe587e2335566edd0d7f6f255b}} 
+\index{PosocionPlano@{PosocionPlano}!Y@{Y}}
+\index{Y@{Y}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+Y}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00013}{13}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+\mbox{\Hypertarget{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}\label{class_posocion_plano_a91db0839b5efef900d97f2e2b009b6ee}} 
+\index{PosocionPlano@{PosocionPlano}!Z@{Z}}
+\index{Z@{Z}!PosocionPlano@{PosocionPlano}}
+\doxysubsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily float Posocion\+Plano.\+Z}
+
+
+
+Definición en la línea \mbox{\hyperlink{_posocion_plano_8cs_source_l00011}{11}} del archivo \mbox{\hyperlink{_posocion_plano_8cs_source}{Posocion\+Plano.\+cs}}.
+
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_posocion_plano_8cs}{Posocion\+Plano.\+cs}}\end{DoxyCompactItemize}
