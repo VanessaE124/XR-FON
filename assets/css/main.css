@@ -37,6 +37,7 @@ section, summary, time, mark, audio, video {
     margin: 0 0 2em 0;
     cursor: default;
 	border-color: #FFF;
+	object-fit: cover;
 } 
 
 article, aside, details, figcaption, figure,
