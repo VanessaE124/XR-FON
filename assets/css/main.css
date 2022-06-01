@@ -26,6 +26,18 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+.imgRedonda {
+    width:200px;
+    height:200px;
+    border-radius:200px;
+	border: solid 1px;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 0.65em;
+    margin: 0 0 2em 0;
+    cursor: default;
+	border-color: #FFF;
+} 
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
