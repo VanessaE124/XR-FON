@@ -39,7 +39,10 @@ section, summary, time, mark, audio, video {
 	border-color: #FFF;
 	object-fit: cover;
 } 
-
+.video_intro{
+	width:480px;
+    height:270px;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
